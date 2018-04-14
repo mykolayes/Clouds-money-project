@@ -125,6 +125,14 @@ public class StaticVariable {
         timePickerDialog.show();
     }
 
+    public static void showDatePickerDialog(Activity activity, DatePickerDialog.OnDateSetListener listener, Calendar minDate){
+        Calendar cal = Calendar.getInstance();
+        DatePickerDialog datePickerDialog = new DatePickerDialog(activity, listener, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
+        if (minDate != null)
+            datePickerDialog.getDatePicker().setMinDate(minDate.getTimeInMillis());
+        datePickerDialog.show();
+    }
+
     public static String getTimeNow(){
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE - HH:mm", Locale.ENGLISH);
