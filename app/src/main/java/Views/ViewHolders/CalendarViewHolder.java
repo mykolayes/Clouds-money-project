@@ -16,6 +16,8 @@ public class CalendarViewHolder extends RecyclerView.ViewHolder {
 
     ItemCalendarBinding content;
 
+    public CalendarViewHolder(View itemView) {
+        super(itemView);
         content = DataBindingUtil.bind(itemView);
     }
 
