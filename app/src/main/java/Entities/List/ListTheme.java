@@ -18,9 +18,17 @@ public class ListTheme {
         arrayList.add(new ThemeModel("Fields", R.drawable.fields, true));
         arrayList.add(new ThemeModel("Forest", R.drawable.forest, true));
         arrayList.add(new ThemeModel("Hills", R.drawable.hills, true));
-        arrayList.add(new ThemeModel("Home", R.drawable.home, true));
+//        arrayList.add(new ThemeModel("Home", R.drawable.home, true));
         arrayList.add(new ThemeModel("Iceberg", R.drawable.iceberg, true));
         arrayList.add(new ThemeModel("Island", R.drawable.island, true));
+        arrayList.add(new ThemeModel("Mountains", R.drawable.mountains, true));
+        arrayList.add(new ThemeModel("River", R.drawable.river, true));
+        arrayList.add(new ThemeModel("Sea", R.drawable.sea, true));
+        arrayList.add(new ThemeModel("Spruce", R.drawable.spruce, true));
+        arrayList.add(new ThemeModel("Trees", R.drawable.trees, true));
+        arrayList.add(new ThemeModel("Village", R.drawable.village, true));
+        arrayList.add(new ThemeModel("Waterfall", R.drawable.waterfall, true));
+        arrayList.add(new ThemeModel("Windmills", R.drawable.windmills, true));
     }
 
     public ArrayList<ThemeModel> getArrayList() {
